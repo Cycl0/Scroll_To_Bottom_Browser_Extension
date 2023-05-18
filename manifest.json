@@ -1,0 +1,32 @@
+{
+  "name": "Bottom",
+  "version": "1.0",
+  "description": "Script to get to the bottom of the pages with infinite scroll",
+  "manifest_version": 2,
+
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["*://*/*"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "browser_action": {},
+
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ]
+}
